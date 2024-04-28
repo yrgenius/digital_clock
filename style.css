@@ -1,0 +1,100 @@
+@font-face {
+    font-family: "digital";
+    src: url("./fonts/digital_2.otf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #555;
+    padding: 0;
+    margin: 0;
+}
+
+.main {
+    width: 500px;
+    padding: 20px 20px 0 20px;
+    background-color: #111;
+    border-radius: 6px;
+}
+
+.display {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 250px;
+    background-color: #222;
+    border-radius: 8px;
+}
+
+.line {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.time,
+.format,
+.today,
+.date,
+.btnPower {
+    font-family: "digital";
+    user-select: none;
+    cursor: default;
+}
+
+.time {
+    display: inline;
+    width: fit-content;
+    font-size: 91px;
+    letter-spacing: 2px;
+}
+
+.format,
+.today {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 34px;
+    font-weight: bold;
+    letter-spacing: 4px;
+}
+
+.date {
+    font-size: 60px;
+}
+
+.btnPower {
+    display: flex;
+    align-items: center;
+    font-size: 55px;
+    line-height: 1.1;
+    margin: 15px auto;
+    border: 2px solid #555;
+    border-radius: 8px;
+    background-color: #111;
+    top: 220px;
+    height: 60px;
+    width: 60px;
+    cursor: pointer;
+}
+
+.btnPower svg {
+    height: 60px;
+    width: 60px;
+}
+
+.powerOff {
+    color: #1f1f1f;
+    border-color: #555;
+}
+
+.powerOn {
+    color: rgb(0, 34, 255);
+    text-shadow: 1px 1px 4px #000, 0 0 20px rgba(0, 140, 255, alpha);
+    border-color: blue;
+}
